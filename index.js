@@ -26,7 +26,6 @@ window.addEventListener('resize', () => {
     hamburger.classList.remove('hidden');
 });
 
-
 // Tilt and glare on cards
 VanillaTilt.init(document.querySelectorAll(".card"), {
     max: 25,
