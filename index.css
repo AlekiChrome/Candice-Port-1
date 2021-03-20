@@ -306,8 +306,14 @@ body {
     color: #ACB5BD;
 }
 
-.fa-twitter-square:hover {
-    color: #38a1f3;
+.fa-instagram:hover {
+    background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+    background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%);
+    background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent;
 }
 
 .fa-linkedin:hover {
@@ -556,6 +562,103 @@ abbr {
 
  /* End of Cards */
 
+ /* Contact Section */
+
+ .f-1 .contact {
+     display: flex;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: rgba(219, 175, 31, 0.438);
+ }
+
+ .f-1 .contact::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 50%;
+     height: 100%;
+     background: rgba(219, 175, 31, 0.296);
+ }
+
+ .f-1 .container {
+    position: relative;
+    min-width: 110px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1;
+ }
+
+ .f-1 .container .contactInfo {
+     position: absolute;
+     top: 40px;
+     width: 350px;
+     height: calc(100% - 80px);
+     background: rgba(219, 175, 31, 0.042);
+     z-index: 1;
+     page-break-after: 40px;
+     padding: 40px;
+     display: flex;
+     justify-self: start;
+     justify-content: space-between;
+     flex-direction: column;
+     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+ }
+
+ .f-1 .container .contactInfo h2 {
+    font-family: 'vonique64', serif;
+    color: white;
+    font-size: 24px;
+    font-weight: 200
+}
+
+.f-1 .container .contactInfo .info  {
+    position: relative;
+    margin: 20px 0;
+}
+
+.f-1 .container .contactInfo .info li {
+    position: relative;
+    margin: 20px 0;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.f-1 .container .contactInfo .info li span:nth-child(1) {
+    width: 30px;
+    min-width: 30px;
+}
+
+.f-1 .container .contactInfo .info li span:nth-child(1) img {
+    max-width: 100%;
+    opacity: 0.5;
+}
+
+.f-1 .container .contactInfo .info li span:nth-child(2) {
+   color: white;
+   max-width: 100%;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.f-1 .container .contactInfo .info li span:nth-child(2) img {
+
+}
+
+.contact #call {
+    color: white;
+}
+
+.contact #call:hover {
+    color: rgb(99, 68, 47);
+}
+
+ /* End of Contact Section */
+
  /* Media */
 
  @media all and (max-width: 720px) {
@@ -613,7 +716,6 @@ abbr {
 
 /* About Mobile section */
 
-/* End of About Mobile section  */
 
 @media all and (max-width: 560px) {
     .intro h1 {
@@ -624,3 +726,5 @@ abbr {
 
     }
 }
+
+/* End of About Mobile section  */
